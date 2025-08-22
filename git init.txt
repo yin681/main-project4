@@ -1,6 +1,12 @@
 git init 
 git add .
+<<<<<<< HEAD
 git commit -m "第一次版本更新 commit"
 git remote add origin https://github.com/yin681/Main-test.git
 git push -u origin main 
 
+=======
+git commit -m "first commit"
+git remote add origin [GitHub Repositories Url]
+git push -u origin main 
+>>>>>>> 5c852d0 (first commit)
