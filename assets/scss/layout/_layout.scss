@@ -1,0 +1,112 @@
+/* ======================
+   Layout（版面）
+   說明：container、row/col 欄位系統與 RWD 欄寬設定
+   ====================== */
+
+.container{
+    max-width: 1320px;/*因為padding設定，導致左右會被多推12px，因此要向內各推12，因此最大寬度是還要加上12+12*/
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right:-12px;
+  margin-left:-12px;
+  /* 因為padding設定，導致左右會被多推12px，因此要向內各推12 */
+}
+.col-1{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12);
+}
+.col-2{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*2);/* 佔據2個欄位寬 */
+}
+.col-3{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*3);/* 佔據3個欄位寬 */
+}
+.col-4{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*4);/* 佔據4個欄位寬 */
+}
+.col-5{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*5);/* 佔據5個欄位寬 */
+}
+.col-6{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*6);/* 佔據6個欄位寬 */
+}
+.col-7{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*7);/* 佔據7個欄位寬 */
+}
+.col-8{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*8);/* 佔據8個欄位寬 */
+}
+.col-9{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*9);/* 佔據9個欄位寬 */
+}
+.col-10{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*10);/* 佔據10個欄位寬 */
+}
+.col-11{
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+  width: calc(100%/12*11);/* 佔據11個欄位寬 */
+}
+.col-12{
+  width: 100%;
+  padding-left: 12px;/* 欄位向左推 */
+  padding-right: 12px;/* 欄位向右推 */
+}
+
+@media(max-width: 767px) {
+    .row{
+    margin-right: -6px;
+    margin-left: -6px;
+    }
+    .col-md-1{
+        padding-left: 6px; /* 欄位向左推 */
+        padding-right: 6px;
+        width: calc(100%/4); /* 4個欄位，佔據1個欄位寬 */
+    }
+    .col-md-2{
+        padding-left: 6px; /* 欄位向左推 */
+        padding-right: 6px;
+        width: calc(100%/4*2); /* 4個欄位寬，佔據2個欄位寬 */
+    }
+    .col-md-3{
+        padding-left: 6px; /* 欄位向左推 */
+        padding-right: 6px;
+        width: calc(100%/4*3); /* 4個欄位寬，佔據3個欄位寬 */
+    }
+     .col-md-4{
+        padding-left: 6px; /* 欄位向左推 */
+        padding-right: 6px;
+        width:100%; /* 4個欄位寬，佔據4個欄位寬 */
+    }
+    .col-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+    
+}
