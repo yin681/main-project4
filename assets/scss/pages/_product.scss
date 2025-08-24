@@ -162,9 +162,7 @@ padding-right:4px;
     max-width: 80%;
     scroll-snap-align: start;
   }
-  .row {
-    flex-wrap: none; /* 不換行 */
-}
+  
   .like-row img { width: 100%; display: block; }
   /* 可選：隱藏 iOS/Chrome 滾動條 */
   .like-row::-webkit-scrollbar { display: none; }
