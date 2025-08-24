@@ -145,20 +145,3 @@ padding-right:4px;
   color: #000;
   text-decoration: none;
 }
-/* 手機：推薦清單橫向滑動 */
-@media (max-width: 767px) {
-  .like-row {
-    flex-wrap: nowrap;              /* 不換行，橫向排 */
-    overflow-x: auto;               /* 顯示水平捲軸 */
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x mandatory;  /* 滑動時卡片對齊 */
-  }
-  .like-row > .col-3 {
-    flex: 0 0 80%;                  /* 每張卡佔 80% 寬（可改 70~90%） */
-    max-width: 80%;
-    scroll-snap-align: start;
-  }
-  .like-row img { width: 100%; display: block; }
-  /* 可選：隱藏 iOS/Chrome 滾動條 */
-  .like-row::-webkit-scrollbar { display: none; }
-}
