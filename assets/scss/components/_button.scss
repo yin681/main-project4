@@ -71,7 +71,7 @@
   font-weight: 500;
   line-height: 1.5;
   cursor: pointer;
-  border-style: none;
+  
   background-color:transparent;
 }
 .active{
@@ -91,14 +91,4 @@
     padding: 8px 16px;
   }
   
-}
-.btn-light{
-    background-color: $background-color;
-    color: $text-color;
-    border: 1px solid $nautral-900;
-}
-.btn-dark{
-    color: $background-color;
-    background-color: $nautral-900;
-    border: 1px solid $nautral-900;
 }
