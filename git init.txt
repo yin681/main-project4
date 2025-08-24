@@ -1,12 +1,18 @@
 git init 
 git add .
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> f477bb7 (更新 SCSS、調整 header/footer、刪除 about.html/contact.html)
 git commit -m "第一次版本更新 commit"
 git remote add origin https://github.com/yin681/Main-test.git
 git push -u origin main 
 
+<<<<<<< HEAD
 =======
 git commit -m "first commit"
 git remote add origin [GitHub Repositories Url]
 git push -u origin main 
 >>>>>>> 5c852d0 (first commit)
+=======
+>>>>>>> f477bb7 (更新 SCSS、調整 header/footer、刪除 about.html/contact.html)
